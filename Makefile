@@ -9,5 +9,8 @@ wyx-cn.pdf: wyx-cn.tex
 wyx-en.pdf: wyx-en.tex
 	xelatex $^
 
+dulian.pdf: dulian.tex
+	xelatex $^
+
 clean:
 	rm -rf *.pdf

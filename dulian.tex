@@ -1,0 +1,165 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue, roman]{casual}
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Lian}
+\familyname{Du}
+\mobile{+86 150-1079-2766}
+\email{duliandd@gmail.com}
+%% \quote{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}
+
+%\phone{(312) 413-8265}                      % optional, remove the line if not wanted
+%\fax{312 996 1491}                          % optional, remove the line if not wanted
+%\photo[64pt]{avatar.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file;
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%% \renewcommand*{\sectionfont}{\LARGE\sffamily\monospace\slshape}
+%% \renewcommand*\addressfont{\fontfamily{pzc}\selectfont}
+%% \renewcommand*\sectionfont{\fontfamily{pzc}\fontsize{20}{24}\selectfont}
+
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2015--Present}{MS in System Software}{School of Computer Science and Engineering, Beihang University}{expected 2018.04}{}{}
+\cventry{2011--2015}{BS in Computer Science}{School of Computer Science and Engineering, Beihang University}{}{}{}
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+\section{Internship}
+\cventry{2017--Present}{Software Engineer at Alibaba Cloud}{Computing Platform Department}{}{}{Designed and implemented a simulator to simulate the online workload of clusters with thousands of machines; Participated in the development of a distributed cache system.}
+\cventry{2016}{Kernel Engineer at Didichuxing}{Kernel Team}{}{}{Researched on Docker storage driver and distributed storage in production environment.}
+\cventry{2014}{Software Engineer at Nuance}{Automotive Team}{}{}{Developed the map navigation frontend of automotive voice assistant.}
+
+\section{Project Experience}
+
+%%\subsection{Research Projects}
+
+\cventry{2017}
+{Cider, a Fast Container Deployment System}
+{Docker, Go}
+{Research Project}{}
+{Docker container deployment is slow and the image pulling operation is mainly responsible for the poor performance. I develop Cider - a novel deployment system to enable rapid container deployment. Firstly, on-demand image data loading is proposed by altering the local Docker storage of worker nodes into all-nodes-sharing network storage. Also, the local copy-on-write layer for containers can ensure Cider to achieve the scalability whilst reducing page cache usage during deployment. Experimental results reveal that Cider can shorten the deployment time by 85\% and 62\% on average when deploying one container and 100 concurrent containers respectively.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2014--2015}
+{SpanFS, a Highly Scalable File System}
+{Linux Kernel}
+{Research Project}{}
+{Working with Junbin Kang, Benlong Zhang and Prof. Tianyu Wo. \\
+Conventional file systems, which are designed for slow hard disk drives, often encounter severe scalability bottlenecks in exploiting the advances of fast storage devices on manycore architectures. To scale file systems to many cores, we propose SpanFS, a novel file system which consists of a collection of micro file system services called domains. SpanFS distributes files and directories among the domains and provides a global file system view on top of the domains. In application-level benchmarks SpanFS improves the performance by up to 73\% relative to Ext4 on a 32-core machine with a modern PCI-E SSD.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2015--2016}
+{Storage Stack Isolation of Containers}
+{Linux Kernel, Docker}
+{Research Project}{}
+{Working with Prof. Tianyu Wo and Huawei OS team. \\
+We propose a new archictecture for Docker persistent storage, which provides local virtualized storage for Docker volumes. The new archictecture isolates the storage stack of containers on the same host, thus emlinates contentions on shared resources. Experimental results show that the throughput of 32 containers can be improved by up to 260\% on a 32-core server.
+}
+
+%%\subsection{Other Projects}
+
+\vspace*{0.2\baselineskip}
+\cventry{2016--Present}
+{Campus BBS}
+{ASP.NET}
+{Independent Project}{}
+{I am responsible for the technical issues of the campus BBS called Future Garden.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2015}
+{International Trading Website}
+{PHP}
+{Independent Project}{}
+{I help set up anbison-sports.com, a B2B website for my friend's export business. Customers' courtries range from Russia to Brazil.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2015}
+{Virtual Machine Charging}
+{Ruby On Rails}
+{Laboratory Project}{}
+{I develop the charging module of the IaaS platform of my laboratory.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2013}
+{PL0 Language Compiler}
+{C}
+{Course Project}{}
+{A simple compiler of PL0 (a Pascal-like programming language).
+}
+
+\section{Publications \& Patents}
+
+\cventry{2017}
+{\textbf{Lian Du}\textnormal{, Tianyu Wo, Renyu Yang, Chunming Hu}}
+{Cider: A Rapid Docker Container Deployment System Through Sharing Network Storage}
+{In 2017 IEEE International Conference on High Performance Computing and Communications (HPCC' 17)}
+{}{}{}
+
+\cventry{2015}
+{\textnormal{Junbin Kang, Benlong Zhang, Tianyu Wo, Weiren Yu, }\textbf{Lian Du}\textnormal{, Shuai Ma and Jinpeng Huai}}
+{SpanFS: A Scalable File System on Fast Storage Devices}
+{In 2015 USENIX Annual Technical Conference (ATC' 15)}
+{}{}{}
+
+\cventry{2016}
+{\textnormal{Tianyu Wo, }\textbf{Lian Du}\textnormal{, Junbin Kang}}
+{Storage Characteristics Specification in File Level}
+{(Patent)}
+{}{}{}
+
+
+\section{Awards}
+
+\cventry{2012, 2015}{First Grade Scholarship}{}{}{}{}
+\cventry{2014}{First Prize in Lanqiao Cup National Progamming Contest}{}{}{}{}
+\cventry{2014}{Second Prize in COMAP's Mathematical Contest in Modeling}{}{}{}{}
+\cventry{2014}{Second Prize in Beihang Fengru Cup Technology Competition}{}{}{}{}
+\cventry{2012}{Outstanding Student Award of Beihang University}{}{}{}{}
+\cventry{2013}{Qianchangzhao Schorlarship}{}{}{}{}
+
+\section{Skills}
+
+\cventry{Knowledge}{Data Structures and Algorithms, Operating System, Computer Network, Compiler Principle}{}{}{}{}
+\cventry{Languages}{C/C++ > Go > Java = Ruby}{}{}{}{}
+\cventry{Systems}{File System, Docker}{}{}{}{}
+\cventry{English}{CET-6 564}{fluent in spoken and written English}{}{}{}
+
+\section{Links}
+
+\cventry{GitHub}{\url{github.com/naildu}}{}{}{}{}
+
+% \closesection{}                   % needed to renewcommands
+% \renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+\end{document}
